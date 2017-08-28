@@ -268,29 +268,6 @@
 
 			<div id="map" class="contacts__map"></div>
 
-			<script>
-				function initMap() {
-					var uluru = {
-						lat: 46.477509,
-						lng: 30.7216734
-					};
-					var map = new google.maps.Map(document.getElementById('map'), {
-						zoom: 15,
-						center: uluru,
-						disableDefaultUI: true
-					});
-					var marker = new google.maps.Marker({
-						position: uluru,
-						map: map,
-						icon: {
-							url: "img/ba_small.png",
-							scaledSize: new google.maps.Size(50, 50)
-						}
-					});
-				}
-
-			</script>
-
 		</section>
 		<!--End Contact US-->
 
@@ -336,13 +313,12 @@
 	<!--End Footer-->
 
 	<!--JS-->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-	<script src="slick-1.6.0/slick/slick.min.js"></script>
+	<script src="/slick-1.6.0/slick/slick.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjxN-4az2hyYVY8W24RHxnvbuCIcn0ELE&callback=initMap"></script>
 	<script src="js/script.js"></script>
+	<script src="js/map.script.js"></script>
 </body>
 
 </html>
