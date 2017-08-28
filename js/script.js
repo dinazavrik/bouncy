@@ -25,7 +25,7 @@
 		});
 
 
-		$('a[href*=#]:not([href=#])').click(function () {
+		$('a[href*="#"]').click(function () {
 			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') ||
 				location.hostname == this.hostname) {
 
@@ -34,7 +34,7 @@
 				if (target.length) {
 					$('html,body').animate({
 						scrollTop: target.offset().top
-					}, 800);
+					}, 1000);
 				}
 			}
 		});
